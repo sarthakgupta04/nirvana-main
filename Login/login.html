@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #ffd500;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: #000000;
+			margin-top: 50px;
+		}
+		form {
+			width: 400px;
+			margin: 0 auto;
+			margin-top: 50px;
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0,0,0,0.2);
+		}
+		input[type="text"], input[type="password"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			border-radius: 5px;
+			background-color: #000000;
+			color: #ffffff;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #ffffff;
+			color: #000000;
+			transition: 0.3s;
+		}
+		p.error {
+			color: red;
+			margin-top: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Please Log In!</h1>
+	<form method="post" action="login.php">
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>
